@@ -1,0 +1,9 @@
+.display-image {
+    &--square {
+        @include aspect-ratio;
+    }
+
+    &--sixteen-nine {
+        @include aspect-ratio(56.25%);
+    }
+}
