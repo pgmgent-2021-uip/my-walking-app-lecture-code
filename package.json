@@ -1,5 +1,5 @@
 {
-  "name": "my-walking-app-week4",
+  "name": "my-walking-app",
   "version": "1.0.0",
   "description": "A simple landing page made with Eleventy",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgmgent-2021-uip/exercises-benedikte-vdw"
+    "url": "git+https://github.com/pgmgent-2021-uip/exercises-adriaanglibert.git"
   },
   "keywords": [
     "Walking",
@@ -22,9 +22,9 @@
   "author": "Adriaan Glibert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgmgent-2021-uip/exercises-benedikte-vdw/issues"
+    "url": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert/issues"
   },
-  "homepage": "https://github.com/pgmgent-2021-uip/exercises-exercises-benedikte-vdw#readme",
+  "homepage": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "npm-run-all": "^4.1.5"
