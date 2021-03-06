@@ -7,3 +7,13 @@
         @include aspect-ratio(56.25%);
     }
 }
+
+.image {
+    &--rounded {
+        border-radius: $radius-sm;
+
+        &-left {
+            border-radius: $radius-sm 0 0 $radius-sm;
+        }
+    }
+}

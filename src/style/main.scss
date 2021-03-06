@@ -21,8 +21,10 @@
 
 // 4. Layout-related sections
 @import
+  'layout/features',
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/hero';
 
 // 5. Components
 @import

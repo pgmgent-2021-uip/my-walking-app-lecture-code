@@ -5,21 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walking App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <main class="container">
-        <h1>My Walking App</h1>
+    <header>
+        <nav class="navbar">
+            <a class="navbar__logo">
+                <img src="http://via.placeholder.com/100x40" />
+            </a>
 
-        <hr />
+            <ul class="navbar__list">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
 
-        <section>
-            <h2>Hero Banner with Aspect Ratio</h2>
+                <li>
+                    <a href="">
+                        Features
+                    </a>
+                </li>
 
-            <figure class="display-image--sixteen-nine">
-                <img src="https://images.unsplash.com/photo-1523215108660-3fdf7932d7a5?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80"/>
-            </figure>
+                <li>
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        About us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="sr-only">My Walking App</h1>
+
+        <section class="hero row">
+            <div class="hero__decoration col-8">
+                <img
+                    class="hero__decoration__image"
+                    src="https://via.placeholder.com/1920x1080"/>
+            </div>
+
+            <article class="hero__content col-4">
+                <h2 class="lead-title--black">
+                    What do we offer?
+                </h2>
+
+                <ul class="hero__content__list">
+                    <li class="hero__content__list__item">
+                        <small class="detail-title">Friends</small>
+
+                        <strong class="base-title">Make new friends while walking!</strong>
+
+                        <p class="hero__content__list__item__text">
+                           Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
+                        </p>
+                    </li>
+                </ul>
+            </article>
         </section>
     </main>
+
+    <footer class="footer">
+        Copyright 2021 @ Adriaan Glibert
+    </footer>
 </body>
 </html>

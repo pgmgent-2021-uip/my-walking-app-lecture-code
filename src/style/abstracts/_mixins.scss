@@ -16,3 +16,10 @@
       object-position: center;
   }
 }
+
+@mixin fancy-text($font-size: $text-base) {
+  font-size: $font-size;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
