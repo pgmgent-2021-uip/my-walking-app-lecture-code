@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eleventy": "npx eleventy",
-    "sass": "sass --style=compressed src/style/main.scss _site/style.css",
+    "sass": "sass --style=compressed src/style/main.scss src/main.css",
     "watch:sass": "npm run sass -- --watch",
     "watch:eleventy": "npx eleventy --serve",
     "start": "npm-run-all sass --parallel watch:*",
