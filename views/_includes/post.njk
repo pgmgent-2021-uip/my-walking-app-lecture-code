@@ -1,0 +1,39 @@
+---
+layout: base
+---
+
+{% if img %}
+    <img src="/assets/img/{{ img }}" />
+{% else %}
+    <img src="/assets/img/fallback.jpg"/>
+{% endif %}
+
+<div class="container">
+    <h1>{{ title }}</h1>
+
+    <div>
+        <small>{{ author }}</small>
+    </div>
+</div>
+
+<article class="container">
+    {{ content | safe }}
+</article>
+
+{% if  collections.news | length %}
+    <section class="container">
+        <h2>Andere artikels:</h2>
+
+        <ul>
+            {% for article in collections.news %}
+                {% if article.url !== page.url %}
+                    <li>
+                        <a href="{{ article.url }}">
+                            {{ article.data.title }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}
