@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<img src="http://picsum.photos/1240/320" />
+
+<h1>{{ title }}</h1>
+<small>{{ subtitle }}</small>
+
+<br/>
+<br/>
+
+<div>
+    {{ content | safe }}
+</div>
+
+{% if allAuthors | length %}
+    <h2>De auteurs van deze blog zijn:</h2>
+
+    <ul>
+        {% for author in allAuthors %}
+                <li>
+                    {{ author }}
+                </li>
+        {% endfor %}
+    </ul>
+{% endif %}

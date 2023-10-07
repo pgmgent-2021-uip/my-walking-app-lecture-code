@@ -1,0 +1,25 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+<header>
+    <nav class="navbar">
+        <a class="navbar__logo">
+            <img src="/assets/img/logo.svg" />
+        </a>
+
+        <ul class="navbar__list">
+            {% for navItem in navPages %}
+                <li>
+                    <a href="{{ navItem.url }}">
+                        {% if page.url === navItem.url %}
+                            <strong>
+                                {{ navItem.title }}
+                            </strong>
+                        {% else %}
+                            {{ navItem.title }}
+                        {% endif %}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

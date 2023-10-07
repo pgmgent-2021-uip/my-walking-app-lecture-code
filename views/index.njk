@@ -1,0 +1,71 @@
+---
+layout: base
+title: Home
+eleventyNavigation:
+    key: Home
+    order: 1
+---
+
+<h1 class="sr-only">My Walking App</h1>
+
+<section class="hero row">
+    <div class="hero__decoration col-8">
+        <img
+            class="hero__decoration__image"
+            src="https://via.placeholder.com/1920x1080"/>
+    </div>
+
+    <article class="hero__content col-4">
+        <h2 class="lead-title--black">
+            What do we offer?
+        </h2>
+
+        <ul class="hero__content__list">
+            <li class="hero__content__list__item">
+                <small class="detail-title">Friends</small>
+
+                <strong class="base-title">Make new friends while walking!</strong>
+
+                <p class="hero__content__list__item__text">
+                    Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
+                </p>
+            </li>
+        </ul>
+    </article>
+</section>
+
+{% if quotes | length  %}
+    <section class="container">
+        <h2>Quotes</h2>
+
+        <ul>
+            {% for quote in quotes %}
+                    <li>
+                        <figure>
+                            <blockquote>
+                                "{{ quote.quote }}"
+                            </blockquote>
+
+                            <figcaption>— {{ quote.author }}</figcaption>
+                        </figure>
+                    </li>
+            {% endfor %}
+        <ul>
+    </section>
+{% endif %}
+
+{% if collections.features | length %}
+    <section class="container">
+        <h2>Features</h2>
+
+        {% for feature in collections.features %}
+            <ul>
+                <li>
+                    <a href="{{ feature.url }}">
+                        {{ feature.data.title }}
+                    </a>
+                </li>
+            </ul>
+        {% endfor %}
+    </section>
+{% endif %}

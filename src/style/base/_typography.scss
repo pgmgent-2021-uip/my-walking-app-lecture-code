@@ -1,0 +1,18 @@
+body {
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  }
+
+h1, h2, h3 {
+  font-size: 2rem;
+}
+
+.base-title {
+  font-size: $text-md;
+}
+
+.detail-title {
+  @include fancy-text($text-sm);
+  display: block;
+  margin-bottom: $spacing-sm;
+  color: $gray;
+}

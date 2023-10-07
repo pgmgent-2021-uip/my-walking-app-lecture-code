@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    &--primary {
+        border: none;
+        padding: $spacing-base;
+        background-color: red;
+        border-radius: $radius-sm;
+    }
+}

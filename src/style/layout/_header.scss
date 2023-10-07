@@ -1,0 +1,36 @@
+.navbar {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $large-container;
+    margin: 0 auto;
+
+    .navbar__logo {
+        margin: 1rem;
+    }
+
+    .navbar__list {
+        list-style: none;
+        display: flex;
+        text-transform: uppercase;
+
+        li {
+            margin: 1rem;
+
+            &:last-child {
+                margin-left: 0;
+            }
+
+            a {
+                @include fancy-text($text-sm);
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
